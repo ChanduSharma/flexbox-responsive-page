@@ -1,25 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Blog</title>
 </head>
+
 <body>
-    <header>Header</header>
+    <header>
+        <h2 class="header-title">FlexExample Blog</h2>
+        <nav class="header-navigation">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#posts" class="nav-link">Blog</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
     <main>
-        <section class="main-banner">Main Banner</section>
-        <section class="blogposts">
-            <div class="blogpost">First Blog</div>
-            <div class="blogpost">Second Blog</div>
-            <div class="blogpost">Third Blog</div>
-            <div class="blogpost d-none">Fourth Blog</div>
-            <div class="blogpost d-none">Fifth Blog</div>
-            <div class="blogpost d-none">Sixth Blog</div>
+        <section class="main-banner" id="home">
+            <h2 class="main-title">Lorem ipsum.<h3>
+                    <p class="main-tagline">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         </section>
-        <section class="contact-form">Contact Form</section>
+        <section class="blogposts" id="posts">
+            <div class="blogpost"><img src="images/test.png" alt="placeholder image" class="blogpost-thumbnail" />
+                <h3 class="blogpost-title">First post</h3>
+                <p class="blogpost-preview">This is an example post.</p>
+            </div>
+            <div class="blogpost">
+                <img src="images/test.png" alt="placeholder image" class="blogpost-thumbnail" />
+                <h3 class="blogpost-title">Second Blog</h3>
+                <p class="blogpost-preview">This is an example post.</p>
+            </div>
+            <div class="blogpost highlighted"><img src="images/test.png" alt="placeholder image"
+                    class="blogpost-thumbnail" />
+                <h3 class="blogpost-title">Third Blog</h3>
+                <p class="blogpost-preview">This is an example post.</p>
+            </div>
+            <div class="blogpost d-none d-sm-block"><img src="images/test.png" alt="placeholder image"
+                    class="blogpost-thumbnail" />
+                <h3 class="blogpost-title">Fourth Blog</h3>
+                <p class="blogpost-preview">This is an example post.</p>
+            </div>
+            <div class="blogpost d-none d-sm-block">
+                <img src="images/test.png" alt="placeholder image" class="blogpost-thumbnail" />
+                <h3 class="blogpost-title">Fifth Blog</h3>
+                <p class="blogpost-preview">This is an example post.</p>
+            </div>
+            <div class="blogpost d-none d-sm-block">
+                <img src="images/test.png" alt="placeholder image" class="blogpost-thumbnail" />
+                <h3 class="blogpost-title">Sixth Blog</h3>
+                <p class="blogpost-preview">This is an example post.</p>
+            </div>
+        </section>
+        <section class="contact-form" id="contact">
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-flex-item">
+                    <label class="form-label">
+                        Name
+                        <input type="text" name="name" class="form-input" />
+                    </label>
+                </div>
+                <div class="form-flex-item">
+                    <label class="form-label">
+                        Email
+                        <input type="email" name="email" class="form-input" />
+                    </label>
+                </div>
+                <div class="form-flex-item">
+                    <label class="form-label">
+                        Message
+                        <textarea name="message" class="form-textarea"></textarea>
+                    </label>
+                </div>
+                <div class="form-flex-item">
+                    <button class="btn-send">Send</button>
+                </div>
+            </form>
+        </section>
     </main>
-    <footer>Footer</footer>
+    <footer>
+        <a href="#home" class="footer-link">Home</a>
+        <a href="#posts" class="footer-link">Blog</a>
+        <a href="#contact" class="footer-link">Contact</a>
+    </footer>
 </body>
+
 </html>
